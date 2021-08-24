@@ -7,7 +7,7 @@
 -->
 # EasyMoCap -> Real-time Visualization
 
-We are the first one to release a real-time visualization tool for both skeletons and SMPL/SMPL+H/SMPL-X/MANO models.
+We are the first ones to release a real-time visualization tool for both skeletons and SMPL/SMPL+H/SMPL-X/MANO models.
 
 ## Install
 
@@ -31,11 +31,11 @@ This step will open the visualization window:
 
 ![](./assets/vis_server.png)
 
-You can alternate the viewpoints free. Press `a` to automatic rotate the scene.  The configuration file `config/vis/o3d_scene.yml` defines the scene and other properties. In the default setting, we define the xyz-axis in the origin, the bounding box of the scene and a chessboard in the ground.
+You can alternate the viewpoints freely. Press `a` to automatically rotate the scene.  The configuration file `config/vis/o3d_scene.yml` defines the scene and other properties. In the default setting, we define the xyz-axis in the origin, the bounding box of the scene and a chessboard in the ground.
 
 ## Send the data
 
-If you are success to open the server, you can visualize your 3D data anywhere. We provide an example code:
+If you succeed to open the server, you can visualize your 3D data anywhere. Here we provide an example code:
 
 ```bash
 python3 apps/vis/vis_client.py --path <path/to/your/keypoints3d> --host <previous_ip_address> --port <previous_port>
@@ -58,7 +58,7 @@ client = BaseSocketClient(host, port)
 client.send(data)
 ```
 
-The format of data is:
+The format of the data is:
 ```python
 data = [
     {
@@ -74,7 +74,7 @@ data = [
 
 ## Define your scene
 
-In the configuration file, we main define the `body_model` and `scene`. You can replace them for your data.
+In the configuration file, we mainly define the `body_model` and `scene`. You can replace them for your data.
 
 ## Examples
 
